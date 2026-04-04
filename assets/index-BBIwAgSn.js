@@ -36242,9 +36242,20 @@ const Dw = "/assets/intro-music-CzqJOUtA.mp3",
                   whileInView: { opacity: 1, y: 0 },
                   transition: { duration: 0.6, delay: 0.5 },
                   viewport: { once: !0 },
-                  className: "font-script text-2xl md:text-3xl",
+                  className: "font-script text-2xl md:text-3xl mb-6",
                   style: { color: "#5C2018" },
                   children: "Shaik Awaiz & Simran Taj",
+                }),
+                f.jsx(z.a, {
+                  initial: { opacity: 0, y: 10 },
+                  whileInView: { opacity: 1, y: 0 },
+                  transition: { duration: 0.6, delay: 0.4 },
+                  href:"https://theluxuryinvites.com",
+                  viewport: { once: !0 },
+                  className:
+                    "font-body text-sm md:text-base leading-relaxed mb-2",
+                  style: { color: "#5C2018" },
+                  children: "Made with Love ❤️ by Luxury Invites",
                 }),
               ],
             }),
@@ -36300,43 +36311,10 @@ function VV() {
         window.addEventListener("scroll", s),
         () => window.removeEventListener("scroll", s)
       );
-    }, []),
-    f.jsxs(z.div, {
-      initial: { opacity: 0, x: 20 },
-      animate: { opacity: 1, x: 0 },
-      transition: { duration: 0.5, delay: 1.2 },
-      className:
-        "fixed top-4 right-4 z-[9999] flex items-center gap-1 backdrop-blur-sm rounded-full p-1 transition-all duration-300",
-      style: {
-        backgroundColor: n
-          ? "rgba(250, 248, 245, 0.6)"
-          : "rgba(250, 248, 245, 0.95)",
-        border: "1px solid rgba(92, 32, 24, 0.2)",
-        opacity: n ? 0.5 : 1,
-      },
-      children: [
-        f.jsx("button", {
-          onClick: () => t("en"),
-          className:
-            "px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-200",
-          style: {
-            backgroundColor: e === "en" ? "#5C2018" : "transparent",
-            color: e === "en" ? "white" : "#5C2018",
-          },
-          children: "EN",
-        }),
-        f.jsx("button", {
-          onClick: () => t("it"),
-          className:
-            "px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-200",
-          style: {
-            backgroundColor: e === "it" ? "#5C2018" : "transparent",
-            color: e === "it" ? "white" : "#5C2018",
-          },
-          children: "IT",
-        }),
-      ],
-    })
+    }, [])
+  
+    
+  
   );
 }
 const UV = () => {
