@@ -25413,7 +25413,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                   className:
                     "font-script text-6xl md:text-7xl lg:text-8xl mb-0 leading-none",
                   style: { color: "#5C2018" },
-                  children: "Awaiz",
+                  children: "Shaik Awaiz",
                 }),
                 f.jsx("span", {
                   className: "font-script text-3xl md:text-4xl",
@@ -25424,7 +25424,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                   className:
                     "font-script text-6xl md:text-7xl lg:text-8xl mb-10 leading-none",
                   style: { color: "#5C2018" },
-                  children: "Simran",
+                  children: "Simran Taj",
                 }),
               ],
             }),
@@ -25575,10 +25575,10 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
       whileInView: { opacity: 1, scale: 1 },
       transition: { duration: 0.5, delay: 0.2 + n * 0.15 },
       viewport: { once: !0 },
-      className: "relative flex flex-col items-center",
+      className: "relative flex flex-col items-center shrink-0",
       children: f.jsxs("div", {
         className:
-          "relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden",
+          "relative w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full overflow-hidden select-none",
         children: [
           f.jsx("div", {
             className:
@@ -25594,6 +25594,12 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
             width: 150,
             height: 150,
             className: `absolute inset-0 w-full h-full cursor-pointer transition-opacity duration-700 ${s ? "opacity-0 pointer-events-none" : "opacity-100"}`,
+            style: {
+              touchAction: "none",
+              userSelect: "none",
+              WebkitUserSelect: "none",
+              WebkitTapHighlightColor: "transparent",
+            },
             onMouseDown: () => a(!0),
             onMouseUp: d,
             onMouseLeave: d,
@@ -25609,87 +25615,23 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
   N$ = () => {
     const [e, t] = g.useState(0),
       [n, r] = g.useState(!1),
-      [s, i] = g.useState(!1),
       o = g.useRef(null),
       { t: a } = lr(),
       l = g.useMemo(() => ["19", "April", "2026"], []),
       c = () => {
         t((u) => {
           const d = u + 1;
-          return (
-            d === 3 &&
-              (r(!0),
-              setTimeout(() => {
-                (i(!1), (document.body.style.overflow = ""));
-              }, 500)),
-            d
-          );
+          return d === 3 && r(!0), d;
         });
       };
-    return (
-      g.useEffect(() => {
-        const u = o.current;
-        if (!u) return;
-        const d = new IntersectionObserver(
-          (h) => {
-            h.forEach((p) => {
-              p.isIntersecting &&
-                p.intersectionRatio >= 0.9 &&
-                e < 3 &&
-                (i(!0),
-                (document.body.style.overflow = "hidden"),
-                (document.documentElement.style.overflow = "hidden"));
-            });
-          },
-          { threshold: [0.9] },
-        );
-        return (
-          d.observe(u),
-          () => {
-            d.disconnect();
-          }
-        );
-      }, [e]),
-      g.useEffect(() => {
-        if (!s) return;
-        const u = (h) => (h.preventDefault(), h.stopPropagation(), !1),
-          d = (h) => {
-            [
-              "ArrowUp",
-              "ArrowDown",
-              "PageUp",
-              "PageDown",
-              "Home",
-              "End",
-              " ",
-            ].includes(h.key) && h.preventDefault();
-          };
-        return (
-          window.addEventListener("wheel", u, { passive: !1 }),
-          window.addEventListener("touchmove", u, { passive: !1 }),
-          window.addEventListener("keydown", d, { passive: !1 }),
-          () => {
-            (window.removeEventListener("wheel", u),
-              window.removeEventListener("touchmove", u),
-              window.removeEventListener("keydown", d));
-          }
-        );
-      }, [s]),
-      g.useEffect(() => {
-        !s &&
-          e === 3 &&
-          ((document.body.style.overflow = ""),
-          (document.documentElement.style.overflow = ""));
-      }, [s, e]),
-      f.jsxs("section", {
+    return f.jsxs("section", {
         ref: o,
         className:
           "min-h-screen flex flex-col items-center justify-center py-8 px-8",
         style: { backgroundColor: "#FAF8F5" },
         children: [
           f.jsx(fu, { children: n && f.jsx(R$, {}) }),
-          s &&
-            e < 3 &&
+          e < 3 &&
             f.jsxs(z.div, {
               initial: { opacity: 0 },
               animate: { opacity: 1 },
@@ -25769,14 +25711,16 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 children: a("reveal.title"),
               }),
               f.jsx("p", {
-                className: "font-body text-sm tracking-[0.15em] uppercase",
+                className:
+                  "font-body text-sm tracking-[0.15em] uppercase whitespace-nowrap",
                 style: { color: "#5C2018" },
                 children: a("reveal.subtitle"),
               }),
             ],
           }),
           f.jsx("div", {
-            className: "flex gap-6 md:gap-10",
+            className:
+              "flex w-full max-w-md flex-nowrap items-center justify-center gap-3 sm:gap-4 md:gap-10 overflow-hidden",
             children: l.map((u, d) =>
               f.jsx(A$, { revealed: u, onReveal: c, index: d }, d),
             ),
@@ -25795,10 +25739,9 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
               }),
           }),
         ],
-      })
-    );
+      });
   },
-  j$ = "/assets/venue-illustration-DebdGS8I.png",
+  j$ = "/assets/amc.jpg",
   O$ = () => {
     const { t: e } = lr();
     return f.jsxs("section", {
@@ -25876,18 +25819,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
             children: "Sunday, 19th April 2026",
           }),
         }),
-        f.jsx(z.div, {
-          initial: { opacity: 0, y: 30 },
-          whileInView: { opacity: 1, y: 0 },
-          transition: { duration: 0.8, ease: "easeOut", delay: 1 },
-          viewport: { once: !0 },
-          className: "text-center",
-          children: f.jsx("p", {
-            className: "font-script text-3xl md:text-4xl",
-            style: { color: "#5C2018" },
-            children: e("saveTheDate.receptionToFollow"),
-          }),
-        }),
+       
       ],
     });
   },
@@ -26002,11 +25934,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 children: [
                   "Simran Taj A.",
                   " ",
-                  f.jsx("span", {
-                    className: "font-body text-xl md:text-2xl align-middle ml-2",
-                    style: { color: "#254a8a" },
-                    children: "B.Com",
-                  }),
+                  
                 ],
               }),
               f.jsx("p", {
@@ -26030,29 +25958,16 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 children: [
                   "Shaik Awaiz",
                   " ",
-                  f.jsx("span", {
-                    className: "font-body text-xl md:text-2xl align-middle ml-2",
-                    style: { color: "#254a8a" },
-                    children: "B.Com, (CS)",
-                  }),
+                 
                 ],
               }),
-              f.jsx("p", {
-                className: "font-body italic text-lg md:text-2xl mt-6",
-                style: { color: "#4a3328" },
-                children: "Senior Corporate Consultant, VSA (Company Secretaries)",
-              }),
+              
               f.jsx("p", {
                 className: "font-body italic text-lg md:text-2xl mt-2",
                 style: { color: "#4a3328" },
                 children: "S/o. Shaik Javeed",
               }),
-              f.jsx("p", {
-                className: "font-body italic text-base md:text-xl mt-4 px-4",
-                style: { color: "#8a6a4d" },
-                children:
-                  "# 6/2-4, 13th A-Cross, Padarayanapura, Bangalore-26, Cell : 8861545408, 9845371353",
-              }),
+             
               f.jsx("p", {
                 className: "font-body italic text-lg md:text-2xl mt-4",
                 style: { color: "#4a3328" },
@@ -26081,6 +25996,19 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
         viewport: { once: !0 },
         className: "relative w-full max-w-md md:max-w-lg",
         children: [
+          f.jsx(z.div, {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.8, ease: "easeOut", delay: 0.4 },
+          viewport: { once: !0 },
+          className: "text-center mb-4",
+          children: f.jsx("h2", {
+            className:
+              "font-display text-3xl md:text-4xl lg:text-5xl tracking-wide leading-tight",
+            style: { color: "#5C2018" },
+            children: "RECEPTION",
+          }),
+        }),
           f.jsx("img", { src: D$, alt: "", className: "w-full h-auto" }),
           f.jsxs("div", {
             className:
@@ -26097,7 +26025,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                     className:
                       "font-display text-xs md:text-sm tracking-[0.2em] uppercase mb-1",
                     style: { color: "#5C2018" },
-                    children: "RECEPTION & LUNCH",
+                    children: "RECEPTION",
                   }),
                   f.jsx("p", {
                     className: "font-body text-[10px] md:text-xs",
@@ -26172,7 +26100,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                     className: "font-body text-[10px] md:text-xs",
                     style: { color: "#5C2018" },
                     children:
-                      "C.M.A. GRAND CONVOCATION HALL 19th Bazar street, Arabic College Main Road, Opposite to Lababin Masjid Kadugondanahalli, Bangalore-560045",
+                      "C.M.A. GRAND HALL 19th Bazar street, Arabic College Main Road, Opposite to Lababin Masjid Kadugondanahalli, Bangalore-560045",
                   }),
                   f.jsx("p", {
                     className: "font-body text-[10px] md:text-xs italic",
@@ -26214,40 +26142,8 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
     });
   },
   F$ = "/assets/gift-icon-BssCdzah.png",
-  V$ = () => {
-    const { t: e } = lr();
-    return f.jsxs("section", {
-      className: "flex flex-col items-center justify-center py-12 px-8",
-      style: { backgroundColor: "#FAF8F5" },
-      children: [
-        
-       
-        f.jsxs(z.div, {
-          initial: { opacity: 0, y: 30 },
-          whileInView: { opacity: 1, y: 0 },
-          transition: { duration: 0.8, ease: "easeOut", delay: 0.6 },
-          viewport: { once: !0 },
-          className: "text-center",
-          children: [
-           
-              ],
-            }),
-          ],
-        });
-
-  },
-  U$ = () => {
-    const { t: e } = lr();
-    return f.jsxs("section", {
-      className:
-        "bg-white flex flex-col items-center justify-center py-12 px-8",
-      children: [
-        
-       
-      
-      ],
-    });
-  },
+  V$ = () => null,
+  U$ = () => null,
   kg = Bu(
     "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
     {
@@ -36348,7 +36244,7 @@ const Dw = "/assets/intro-music-CzqJOUtA.mp3",
                   viewport: { once: !0 },
                   className: "font-script text-2xl md:text-3xl",
                   style: { color: "#5C2018" },
-                  children: "Awaiz & Simran",
+                  children: "Shaik Awaiz & Simran Taj",
                 }),
               ],
             }),
@@ -36357,7 +36253,7 @@ const Dw = "/assets/intro-music-CzqJOUtA.mp3",
       }),
     });
   },
-  $V = "/assets/thedigitalyes-logo-B7PGcLFc.png",
+  $V = "/assets/logo_a_s.png",
   FV = () => {
     const [e, t] = g.useState(!1),
       [n, r] = g.useState(!1),
