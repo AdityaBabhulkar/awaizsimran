@@ -723,7 +723,7 @@
   </style>
 </head>
 
-<body style="overflow: hidden;">
+<body style="overflow-x: hidden; overflow-y: auto;">
   <div id="root">
     <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
       <ol tabindex="-1"
@@ -772,27 +772,27 @@
           <p class="font-body text-sm tracking-[0.15em] uppercase whitespace-nowrap" style="color: rgb(92, 32, 24);">Scratch to discover
             the date</p>
         </div>
-        <div class="flex gap-6 md:gap-10">
-          <div class="relative flex flex-col items-center" style="opacity: 0; transform: scale(0.8);">
-            <div class="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden">
+        <div class="flex w-full max-w-xs sm:max-w-md items-center justify-center gap-2 sm:gap-4 md:gap-10 overflow-visible">
+          <div class="relative flex flex-col items-center shrink-0" style="opacity: 0; transform: scale(0.8);">
+            <div class="relative w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
               <div class="absolute inset-0 flex items-center justify-center bg-paper"><span
-                  class="font-display text-2xl md:text-3xl" style="color: rgb(92, 32, 24);">10</span></div><canvas
+                  class="font-display text-xl sm:text-2xl md:text-3xl" style="color: rgb(92, 32, 24);">10</span></div><canvas
                 width="150" height="150"
                 class="absolute inset-0 w-full h-full cursor-pointer transition-opacity duration-700 opacity-100"></canvas>
             </div>
           </div>
-          <div class="relative flex flex-col items-center" style="opacity: 0; transform: scale(0.8);">
-            <div class="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden">
+          <div class="relative flex flex-col items-center shrink-0" style="opacity: 0; transform: scale(0.8);">
+            <div class="relative w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
               <div class="absolute inset-0 flex items-center justify-center bg-paper"><span
-                  class="font-display text-2xl md:text-3xl" style="color: rgb(92, 32, 24);">Sept</span></div><canvas
+                  class="font-display text-xl sm:text-2xl md:text-3xl" style="color: rgb(92, 32, 24);">Sept</span></div><canvas
                 width="150" height="150"
                 class="absolute inset-0 w-full h-full cursor-pointer transition-opacity duration-700 opacity-100"></canvas>
             </div>
           </div>
-          <div class="relative flex flex-col items-center" style="opacity: 0; transform: scale(0.8);">
-            <div class="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden">
+          <div class="relative flex flex-col items-center shrink-0" style="opacity: 0; transform: scale(0.8);">
+            <div class="relative w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
               <div class="absolute inset-0 flex items-center justify-center bg-paper"><span
-                  class="font-display text-2xl md:text-3xl" style="color: rgb(92, 32, 24);">2027</span></div><canvas
+                  class="font-display text-xl sm:text-2xl md:text-3xl" style="color: rgb(92, 32, 24);">2027</span></div><canvas
                 width="150" height="150"
                 class="absolute inset-0 w-full h-full cursor-pointer transition-opacity duration-700 opacity-100"></canvas>
             </div>
