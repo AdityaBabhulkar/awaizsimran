@@ -25270,10 +25270,13 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
     (g.useEffect(
       () => (
         n === "idle"
-          ? (document.body.style.overflow = "hidden")
-          : (document.body.style.overflow = ""),
+          ? ((document.body.style.overflowX = "hidden"),
+            (document.body.style.overflowY = "auto"))
+          : ((document.body.style.overflowX = "hidden"),
+            (document.body.style.overflowY = "auto")),
         () => {
-          document.body.style.overflow = "";
+          (document.body.style.overflowX = "hidden"),
+            (document.body.style.overflowY = "auto");
         }
       ),
       [n],
@@ -25578,13 +25581,13 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
       className: "relative flex flex-col items-center shrink-0",
       children: f.jsxs("div", {
         className:
-          "relative w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full overflow-hidden select-none",
+          "relative w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full overflow-hidden select-none",
         children: [
           f.jsx("div", {
             className:
               "absolute inset-0 flex items-center justify-center bg-paper",
             children: f.jsx("span", {
-              className: "font-display text-2xl md:text-3xl",
+              className: "font-display text-xl sm:text-2xl md:text-3xl",
               style: { color: "#5C2018" },
               children: e,
             }),
@@ -25720,7 +25723,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
           }),
           f.jsx("div", {
             className:
-              "flex w-full max-w-md flex-nowrap items-center justify-center gap-3 sm:gap-4 md:gap-10 overflow-hidden",
+              "flex w-full max-w-xs sm:max-w-md flex-nowrap items-center justify-center gap-2 sm:gap-4 md:gap-10 overflow-visible",
             children: l.map((u, d) =>
               f.jsx(A$, { revealed: u, onReveal: c, index: d }, d),
             ),
@@ -36242,7 +36245,7 @@ const Dw = "/assets/intro-music-CzqJOUtA.mp3",
                   whileInView: { opacity: 1, y: 0 },
                   transition: { duration: 0.6, delay: 0.5 },
                   viewport: { once: !0 },
-                  className: "font-script text-2xl md:text-3xl mb-6",
+                  className: "font-script text-2xl md:text-3xl mb-6 mt-4",
                   style: { color: "#5C2018" },
                   children: "Shaik Awaiz & Simran Taj",
                 }),
