@@ -25827,7 +25827,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 className:
                   "font-body text-sm md:text-base tracking-[0.12em] uppercase mt-3",
                 style: { color: "#5C2018" },
-                children: "NIKAH AT:11:30 LUNCH THERE AFTER",
+                children: "NIKAH AT:11:30 AM LUNCH THERE AFTER",
               }),
             ],
           }),
@@ -26000,8 +26000,8 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
   D$ = "/assets/menu-frame-BFE5kCs7.png",
   M$ = () =>
     f.jsx("section", {
-      className: "flex flex-col items-center justify-center py-8 px-4",
-      style: { backgroundColor: "#FAF8F5" },
+      className: "flex flex-col items-center justify-center py-8 px-4 ",
+      style: { backgroundColor: "#FAF8F5", },
       children: f.jsxs(z.div, {
         initial: { opacity: 0, y: 30 },
         whileInView: { opacity: 1, y: 0 },
@@ -26038,7 +26038,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
           f.jsxs("div", {
             className: "relative w-full",
             children: [
-              f.jsx("img", { src: D$, alt: "", className: "w-full h-auto" }),
+              f.jsx("img", { src: D$, alt: "", className: "w-full h-auto" ,style: { opacity: 1, transform: "translateY(30px)" },}),
               f.jsxs("div", {
                 className:
                   "absolute inset-0 flex flex-col items-center justify-center px-[16%] pt-[18%] pb-[18%]",
@@ -26052,7 +26052,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 children: [
                   f.jsx("h3", {
                     className:
-                      "font-display text-xs md:text-sm tracking-[0.2em] uppercase mb-1",
+                      "font-display text-3xs md:text-sm tracking-[0.1em] uppercase mb-1",
                     style: { color: "#5C2018" },
                     children: "RECEPTION",
                   }),
@@ -26077,12 +26077,12 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 children: [
                   f.jsx("h3", {
                     className:
-                      "font-display text-xs md:text-sm tracking-[0.2em] uppercase mb-1",
+                      "font-display text-2xs md:text-sm tracking-[0.1em] uppercase mb-1",
                     style: { color: "#5C2018" },
                     children: "DATE AND DAY",
                   }),
                   f.jsx("p", {
-                    className: "font-body text-[8px] md:text-[10px] leading-tight",
+                    className: "font-body text-[20px] md:text-[10px] leading-tight",
                     style: { color: "#5C2018" },
                     children: "22nd April 2026, On Wednesday",
                   }),
@@ -26101,12 +26101,12 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 children: [
                   f.jsx("h3", {
                     className:
-                      "font-display text-xs md:text-sm tracking-[0.2em] uppercase mb-1",
+                      "font-display text-2xs md:text-sm tracking-[0.1em] uppercase mb-1",
                     style: { color: "#5C2018" },
                     children: "DINNER TIME",
                   }),
                   f.jsx("p", {
-                    className: "font-body text-[8px] md:text-[10px] leading-tight",
+                    className: "font-body text-[20px] md:text-[10px] leading-tight",
                     style: { color: "#5C2018" },
                     children: "07:30 P.M. onwards",
                   }),
@@ -26121,18 +26121,18 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 children: [
                   f.jsx("h3", {
                     className:
-                      "font-display text-xs md:text-sm tracking-[0.2em] uppercase mb-1",
+                      "font-display text-2xs md:text-sm tracking-[0.1em] uppercase mb-1",
                     style: { color: "#5C2018" },
                     children: "VENUE",
                   }),
                   f.jsxs("div", {
                     className:
-                      "mx-auto max-w-[78%] font-body text-[8px] leading-tight md:max-w-[85%] md:text-[10px] md:leading-relaxed",
+                      "mx-auto max-w-[85%] font-body text-[20px] leading-tight md:max-w-[85%] md:text-[10px] md:leading-relaxed",
                     style: { color: "#5C2018" },
                     children: [
-                      f.jsx("p", { children: "C.M.A. GRAND HALL" }),
+                      f.jsx("p", { children: "C.M.A. GRAND HALL,19th Bazar" }),
                       f.jsx("p", {
-                        children: "19th Bazar Street, Arabic College Main Road",
+                        children: " Street, Arabic College Main Road",
                       }),
                       f.jsx("p", {
                         children:
