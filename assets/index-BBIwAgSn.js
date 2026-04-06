@@ -25952,9 +25952,9 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
               }),
               
               f.jsx("p", {
-                className: "font-body italic text-lg md:text-2xl mt-6",
+                className: "font-body italic text-lg md:text-2xl mt-2",
                 style: { color: "#4a3328" },
-                children: "S/o. Shaik Javeed",
+                children: "S/o. MR.&Mrs. Shaik Javeed",
               }),
              
               f.jsx("p", {
@@ -25981,8 +25981,18 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                   
                 ],
               }),
+
               f.jsx("p", {
-                className: "font-body italic text-lg md:text-2xl mt-6",
+                className: "font-body italic text-lg md:text-2xl mt-2",
+                style: { color: "#4a3328" },
+                children: "D/o. Mr.&Mrs.Anwar Basha",
+              }),
+
+
+            
+
+              f.jsx("p", {
+                className: "font-body italic text-lg md:text-2xl mt-4",
                 style: { color: "#4a3328" },
                 children: "P. Grand D/o. Janab Mohammed Ghouse Saheb",
               }),
@@ -26052,7 +26062,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 children: [
                   f.jsx("h3", {
                     className:
-                      "font-display text-3xs md:text-sm tracking-[0.1em] uppercase mb-1",
+                      "font-display text-base md:text-xl tracking-[0.1em] uppercase mb-1",
                     style: { color: "#5C2018" },
                     children: "RECEPTION",
                   }),
@@ -26077,12 +26087,12 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 children: [
                   f.jsx("h3", {
                     className:
-                      "font-display text-2xs md:text-sm tracking-[0.1em] uppercase mb-1",
+                      "font-display text-base md:text-xl tracking-[0.1em] uppercase mb-1",
                     style: { color: "#5C2018" },
                     children: "DATE AND DAY",
                   }),
                   f.jsx("p", {
-                    className: "font-body text-[20px] md:text-[10px] leading-tight",
+                    className: "font-body text-sm md:text-base leading-tight",
                     style: { color: "#5C2018" },
                     children: "22nd April 2026, On Wednesday",
                   }),
@@ -26101,12 +26111,12 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 children: [
                   f.jsx("h3", {
                     className:
-                      "font-display text-2xs md:text-sm tracking-[0.1em] uppercase mb-1",
+                      "font-display text-base md:text-xl tracking-[0.1em] uppercase mb-1",
                     style: { color: "#5C2018" },
                     children: "DINNER TIME",
                   }),
                   f.jsx("p", {
-                    className: "font-body text-[20px] md:text-[10px] leading-tight",
+                    className: "font-body text-sm md:text-base leading-tight",
                     style: { color: "#5C2018" },
                     children: "07:30 P.M. onwards",
                   }),
@@ -26121,13 +26131,13 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 children: [
                   f.jsx("h3", {
                     className:
-                      "font-display text-2xs md:text-sm tracking-[0.1em] uppercase mb-1",
+                      "font-display text-base md:text-xl tracking-[0.1em] uppercase mb-1",
                     style: { color: "#5C2018" },
                     children: "VENUE",
                   }),
                   f.jsxs("div", {
                     className:
-                      "mx-auto max-w-[85%] font-body text-[20px] leading-tight md:max-w-[85%] md:text-[10px] md:leading-relaxed",
+                      "mx-auto max-w-[85%] font-body text-sm leading-tight md:max-w-[85%] md:text-base md:leading-relaxed",
                     style: { color: "#5C2018" },
                     children: [
                       f.jsx("p", { children: "C.M.A. GRAND HALL,19th Bazar" }),
@@ -36108,57 +36118,7 @@ function DV() {
           }));
       }
     };
-  return f.jsx("section", {
-    id: "rsvp",
-    className: "pt-6 pb-12 px-6 md:py-16",
-    style: { backgroundColor: "#FAF8F5" },
-    children: f.jsxs("div", {
-      className: "max-w-xl mx-auto text-center",
-      children: [
-        f.jsx("h2", {
-          className: "font-script text-4xl md:text-5xl mb-3",
-          style: { color: "#5C2018" },
-          children: "RSVP on WhatsApp",
-        }),
-        f.jsx("p", {
-          className: "font-body text-sm tracking-wide mb-10",
-          style: { color: "rgba(92, 32, 24, 0.8)" },
-          children: "Tap a button below to open WhatsApp chat.",
-        }),
-        f.jsxs("div", {
-          className: "flex flex-col sm:flex-row items-center justify-center gap-4",
-          children: [
-            f.jsx("a", {
-              href: "https://wa.me/15551234567",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              className:
-                "inline-flex min-w-[220px] items-center justify-center rounded-full px-6 py-4 font-body text-sm tracking-wide transition-all duration-300",
-              style: {
-                backgroundColor: "#5C2018",
-                color: "white",
-                boxShadow: "0 10px 30px rgba(92, 32, 24, 0.18)",
-              },
-              children: "RSVP 1",
-            }),
-            f.jsx("a", {
-              href: "https://wa.me/15557654321",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              className:
-                "inline-flex min-w-[220px] items-center justify-center rounded-full px-6 py-4 font-body text-sm tracking-wide transition-all duration-300",
-              style: {
-                backgroundColor: "#5C2018",
-                color: "white",
-                boxShadow: "0 10px 30px rgba(92, 32, 24, 0.18)",
-              },
-              children: "RSVP 2",
-            }),
-          ],
-        }),
-      ],
-    }),
-  });
+  return null;
 }
 const Dw = "/assets/intro-music-CzqJOUtA.mp3",
   MV = ({ startPlaying: e = !1 }) => {
