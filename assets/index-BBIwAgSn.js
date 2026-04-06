@@ -25744,7 +25744,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
         ],
       });
   },
-  j$ = "/assets/amc.jpg",
+  j$ = "/assets/amc.jpeg",
   O$ = () => {
     const { t: e } = lr();
     return f.jsxs("section", {
@@ -25935,6 +25935,37 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 className: "font-script text-4xl md:text-6xl leading-tight",
                 style: { color: "#254a8a" },
                 children: [
+                  "Shaik Awaiz",
+                  " ",
+                 
+                ],
+              }),
+              
+              f.jsx("p", {
+                className: "font-body italic text-lg md:text-2xl mt-6",
+                style: { color: "#4a3328" },
+                children: "S/o. Shaik Javeed",
+              }),
+             
+              f.jsx("p", {
+                className: "font-body italic text-lg md:text-2xl mt-4",
+                style: { color: "#4a3328" },
+                children: "P. Grand S/o. Late Shaik Dasthageer Saheb",
+              }),
+              f.jsx("p", {
+                className: "font-body italic text-lg md:text-2xl mt-2",
+                style: { color: "#4a3328" },
+                children: "M. Grand S/o. Mohammed Samiulla Saheb",
+              }),
+              f.jsx("p", {
+                className: "font-display text-3xl md:text-4xl mt-8",
+                style: { color: "#4a3328" },
+                children: "Weds",
+              }),
+              f.jsxs("h3", {
+                className: "font-script text-4xl md:text-6xl leading-tight mt-6",
+                style: { color: "#254a8a" },
+                children: [
                   "Simran Taj A.",
                   " ",
                   
@@ -25949,37 +25980,6 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 className: "font-body italic text-lg md:text-2xl mt-2",
                 style: { color: "#4a3328" },
                 children: "M. Grand D/o. Late Janab S. Habeeb Saheb",
-              }),
-              f.jsx("p", {
-                className: "font-display text-3xl md:text-4xl mt-8",
-                style: { color: "#4a3328" },
-                children: "Weds",
-              }),
-              f.jsxs("h3", {
-                className: "font-script text-4xl md:text-6xl leading-tight mt-6",
-                style: { color: "#254a8a" },
-                children: [
-                  "Shaik Awaiz",
-                  " ",
-                 
-                ],
-              }),
-              
-              f.jsx("p", {
-                className: "font-body italic text-lg md:text-2xl mt-2",
-                style: { color: "#4a3328" },
-                children: "S/o. Shaik Javeed",
-              }),
-             
-              f.jsx("p", {
-                className: "font-body italic text-lg md:text-2xl mt-4",
-                style: { color: "#4a3328" },
-                children: "P. Grand S/o. Late Shaik Dasthageer Saheb",
-              }),
-              f.jsx("p", {
-                className: "font-body italic text-lg md:text-2xl mt-2",
-                style: { color: "#4a3328" },
-                children: "M. Grand S/o. Mohammed Samiulla Saheb",
               }),
             ],
           }),
@@ -26012,17 +26012,33 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
             children: "RECEPTION",
           }),
         }),
-          f.jsx("img", { src: D$, alt: "", className: "w-full h-auto" }),
+          f.jsx(z.div, {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.8, ease: "easeOut", delay: 0.45 },
+          viewport: { once: !0 },
+          className: "mb-6 overflow-hidden rounded-[2rem]",
+          style: { boxShadow: "0 18px 42px rgba(92, 32, 24, 0.12)" },
+          children: f.jsx("img", {
+            src: "/assets/reception.jpeg",
+            alt: "Reception celebration",
+            className: "w-full h-56 md:h-72 object-cover",
+          }),
+        }),
           f.jsxs("div", {
-            className:
-              "absolute inset-0 flex flex-col items-center justify-center px-[12%] -mt-8",
+            className: "relative w-full",
             children: [
+              f.jsx("img", { src: D$, alt: "", className: "w-full h-auto" }),
+              f.jsxs("div", {
+                className:
+                  "absolute inset-0 flex flex-col items-center justify-center px-[16%] pt-[18%] pb-[18%]",
+                children: [
               f.jsxs(z.div, {
                 initial: { opacity: 0, y: 10 },
                 whileInView: { opacity: 1, y: 0 },
                 transition: { duration: 0.5, delay: 0.4 },
                 viewport: { once: !0 },
-                className: "text-center mb-5",
+                className: "text-center mb-3",
                 children: [
                   f.jsx("h3", {
                     className:
@@ -26047,7 +26063,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 whileInView: { opacity: 1, y: 0 },
                 transition: { duration: 0.5, delay: 0.5 },
                 viewport: { once: !0 },
-                className: "text-center mb-5",
+                className: "text-center mb-3",
                 children: [
                   f.jsx("h3", {
                     className:
@@ -26071,7 +26087,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 whileInView: { opacity: 1, y: 0 },
                 transition: { duration: 0.5, delay: 0.6 },
                 viewport: { once: !0 },
-                className: "text-center mb-5",
+                className: "text-center mb-3",
                 children: [
                   f.jsx("h3", {
                     className:
@@ -26091,7 +26107,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                 whileInView: { opacity: 1, y: 0 },
                 transition: { duration: 0.5, delay: 0.7 },
                 viewport: { once: !0 },
-                className: "text-center mb-4",
+                className: "text-center",
                 children: [
                   f.jsx("h3", {
                     className:
@@ -26100,7 +26116,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                     children: "VENUE",
                   }),
                   f.jsx("p", {
-                    className: "font-body text-[10px] md:text-xs",
+                    className: "font-body text-[8px] md:text-[10px] leading-relaxed",
                     style: { color: "#5C2018" },
                     children:
                       "C.M.A. GRAND HALL 19th Bazar street, Arabic College Main Road, Opposite to Lababin Masjid Kadugondanahalli, Bangalore-560045",
@@ -26128,7 +26144,9 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
           }),
         ],
       }),
-    }),
+    ],
+  }),
+}),
   L$ = "/assets/dresscode-illustration-BT5yPEQh.png",
   $$ = () => {
     const { t: e } = lr();
