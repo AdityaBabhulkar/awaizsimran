@@ -25630,7 +25630,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
     return f.jsxs("section", {
         ref: o,
         className:
-          "min-h-screen flex flex-col items-center justify-center py-8 px-8",
+          "flex flex-col items-center justify-start px-5 pt-6 pb-10 md:min-h-screen md:justify-center md:px-8 md:py-8",
         style: { backgroundColor: "#FAF8F5" },
         children: [
           f.jsx(fu, { children: n && f.jsx(R$, {}) }),
@@ -25706,7 +25706,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
             whileInView: { opacity: 1, y: 0 },
             transition: { duration: 0.6, ease: "easeOut" },
             viewport: { once: !0 },
-            className: "text-center mb-8",
+            className: "text-center mb-6 md:mb-8",
             children: [
               f.jsx("h2", {
                 className: "font-script text-4xl md:text-5xl mb-4",
@@ -25816,10 +25816,20 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
           transition: { duration: 0.8, ease: "easeOut", delay: 0.6 },
           viewport: { once: !0 },
           className: "text-center mb-10",
-          children: f.jsx("p", {
-            className: "font-display text-2xl md:text-3xl tracking-wide",
-            style: { color: "#5C2018" },
-            children: "Sunday, 19th April 2026",
+          children: f.jsxs(f.Fragment, {
+            children: [
+              f.jsx("p", {
+                className: "font-display text-2xl md:text-3xl tracking-wide",
+                style: { color: "#5C2018" },
+                children: "Sunday, 19th April 2026",
+              }),
+              f.jsx("p", {
+                className:
+                  "font-body text-sm md:text-base tracking-[0.12em] uppercase mt-3",
+                style: { color: "#5C2018" },
+                children: "NIKAH AT:11:30 LUNCH THERE AFTER",
+              }),
+            ],
           }),
         }),
        
@@ -26072,12 +26082,12 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                     children: "DATE AND DAY",
                   }),
                   f.jsx("p", {
-                    className: "font-body text-[10px] md:text-xs",
+                    className: "font-body text-[8px] md:text-[10px] leading-tight",
                     style: { color: "#5C2018" },
                     children: "22nd April 2026, On Wednesday",
                   }),
                   f.jsx("p", {
-                    className: "font-body text-[10px] md:text-xs italic",
+                    className: "font-body text-[8px] md:text-[10px] italic",
                     style: { color: "#5C2018" },
                   }),
                 ],
@@ -26096,7 +26106,7 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                     children: "DINNER TIME",
                   }),
                   f.jsx("p", {
-                    className: "font-body text-[10px] md:text-xs",
+                    className: "font-body text-[8px] md:text-[10px] leading-tight",
                     style: { color: "#5C2018" },
                     children: "07:30 P.M. onwards",
                   }),
@@ -26115,11 +26125,20 @@ const k$ = ({ onComplete: e, onFirstClick: t }) => {
                     style: { color: "#5C2018" },
                     children: "VENUE",
                   }),
-                  f.jsx("p", {
-                    className: "font-body text-[8px] md:text-[10px] leading-relaxed",
+                  f.jsxs("div", {
+                    className:
+                      "mx-auto max-w-[78%] font-body text-[8px] leading-tight md:max-w-[85%] md:text-[10px] md:leading-relaxed",
                     style: { color: "#5C2018" },
-                    children:
-                      "C.M.A. GRAND HALL 19th Bazar street, Arabic College Main Road, Opposite to Lababin Masjid Kadugondanahalli, Bangalore-560045",
+                    children: [
+                      f.jsx("p", { children: "C.M.A. GRAND HALL" }),
+                      f.jsx("p", {
+                        children: "19th Bazar Street, Arabic College Main Road",
+                      }),
+                      f.jsx("p", {
+                        children:
+                          "Opposite to Lababin Masjid, Kadugondanahalli, Bangalore-560045",
+                      }),
+                    ],
                   }),
                   f.jsx("p", {
                     className: "font-body text-[10px] md:text-xs italic",
@@ -36091,7 +36110,7 @@ function DV() {
     };
   return f.jsx("section", {
     id: "rsvp",
-    className: "py-16 px-6",
+    className: "pt-6 pb-12 px-6 md:py-16",
     style: { backgroundColor: "#FAF8F5" },
     children: f.jsxs("div", {
       className: "max-w-xl mx-auto text-center",
